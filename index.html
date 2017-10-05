@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>4QAS</title>
+
+    <style media="screen">
+      body {
+        font-size: 2rem;
+
+        padding-top: 60px;
+        background-image: url('star.gif');
+        background-size: 33.3%;
+
+        padding-bottom: 200vh;
+      }
+
+      h1, h2, h3 {
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.5);
+      }
+
+      h1 {
+        font-size: 5rem;
+      }
+
+      h2 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+      }
+
+      a {
+        color: blue;
+      }
+
+      .shows {
+        text-align: center;
+      }
+
+      ul {
+        /*list-style: url('star.gif');*/
+        list-style-type: decimal;
+        margin: 0;
+        text-align: left;
+        display: inline-block;
+      }
+
+      .link {
+        margin-top: 10px;
+      }
+
+      .link a {
+        color: blue;
+      }
+
+      .bios {
+        flex-wrap: wrap;
+
+        padding: 10px 10%;
+      }
+
+      .bios .bio {
+        position: relative;
+        box-sizing: border-box;
+        flex-basis: 33%;
+        padding: 25px;
+      }
+
+      .bios .bio h3 {
+        position: absolute;
+        z-index: 100;
+        top: -2rem; right: -2rem;
+        transform: rotate(20deg);
+
+        font-size: 4rem;
+        color: #FFBC00;
+      }
+
+      .bios .bio img {
+        width: 100%;
+      }
+
+      .ad {
+        z-index: 100000;
+
+        position: fixed;
+        right: 25px;
+        bottom: 25vh;
+
+        padding: 7px;
+        /*padding-bottom: 2.5em;*/
+        padding-bottom: 0;
+        background-color: red;
+
+        box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.45);
+
+        cursor: pointer;
+
+        font-family: sans-serif;
+      }
+
+      .ad img {
+        width: 20vw;
+      }
+
+      .ad span.x {
+        position: absolute;
+        right: 0; top: 0;
+        line-height: 1em;
+        height: 1em; width: 1em;
+        border-radius: 100%;
+
+        background-color: #eee;
+        border: 2px solid blue;
+        box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+
+        text-align: center;
+
+        cursor: not-allowed;
+      }
+
+      .ad .bottomtext {
+        position: absolute;
+        bottom: 0;
+
+        padding: 0px 2px;
+      }
+
+      .creditscore {
+        width: 80%;
+        margin: auto;
+        padding: 20px 15px;
+        background-color: #fff;
+        border: 2px solid #aaa;
+
+        font-family: sans-serif;
+        text-align: center;
+      }
+
+      .creditscore h2 {
+        margin-top: 0px;
+      }
+
+      .creditscore .flexbox {
+        padding: 0px 10%;
+      }
+
+      .creditscore .flexbox > * {
+        margin: 0px 10px;
+      }
+
+      .creditscore label {
+        font-size: 26px;
+      }
+
+      .creditscore input[type="text"] {
+        flex-grow: 1;
+        border: 2px solid green;
+      }
+
+      .creditscore input[type="submit"] {
+        margin-top: 20px;
+        font-size: 30px;
+        background-color: aqua;
+        border: 1px solid blue;
+        border-radius: 5px;
+      }
+
+      .flexbox {
+        display: flex;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="ad">
+      <span class="x">x</span>
+      <img src="pepsi.jpg" alt="Crystal Pepsi... 17 teaspoons of sugar">
+      <!-- <div class="bottomtext">
+        Buy 10 bottles fast now!
+      </div> -->
+    </div>
+
+    <h1>Fourth Quarter All-stars</h1>
+
+    <h2>Upcoming Shows</h2>
+    <div class="shows">
+      <ul>
+        <li>October 5 @ 10:30PM</li>
+        <li>October 6 @ 8:00PM</li>
+        <li>October 7 @ 8:00PM</li>
+        <li><a href="https://www.facebook.com/events/969534323186827/?acontext=%7B%22ref%22%3A%2229%22%2C%22ref_notif_type%22%3A%22plan_user_invited%22%2C%22action_history%22%3A%22null%22%7D&notif_t=plan_user_invited&notif_id=1506313109237194">link to social media</a></li>
+      </ul>
+    </div>
+
+    <h2>Meet the All-stars</h2>
+
+    <div class="flexbox bios">
+      <div class="bio">
+        <img src="headshots/Laura_2.jpg" alt="Laura">
+        <h3>Laura</h3>
+      </div>
+      <div class="bio">
+        <img src="headshots/Laura_2.jpg" alt="Laura">
+        <h3>Lucy</h3>
+      </div>
+      <div class="bio">
+        <img src="headshots/Laura_2.jpg" alt="Laura">
+        <h3>Maya</h3>
+      </div>
+      <div class="bio">
+        <img src="headshots/Laura_2.jpg" alt="Laura">
+        <h3>Veronica</h3>
+      </div>
+      <div class="bio">
+        <img src="headshots/Laura_2.jpg" alt="Laura">
+        <h3>Drew</h3>
+      </div>
+      <div class="bio">
+        <img src="headshots/Laura_2.jpg" alt="Laura">
+        <h3>Derl</h3>
+      </div>
+      <div class="bio">
+        <img src="headshots/Laura_2.jpg" alt="Laura">
+        <h3>Andrew</h3>
+      </div>
+      <div class="bio">
+        <img src="headshots/Laura_2.jpg" alt="Laura">
+        <h3>Miles</h3>
+      </div>
+      <div class="bio">
+        <img src="headshots/Laura_2.jpg" alt="Laura">
+        <h3>Leo</h3>
+      </div>
+      <div class="bio">
+        <img src="headshots/Laura_2.jpg" alt="Laura">
+        <h3>Wendy</h3>
+      </div>
+    </div>
+
+    <div class="creditscore">
+      <h2>Free Credit Score Checker!!</h2>
+      <form class="" action="index.html" method="post">
+        <div class="flexbox">
+          <label for="ssn">social security number:</label>
+          <input type="text" name="ssn" value="">
+        </div>
+
+        <input type="submit" name="" value="credit score Me now!!!">
+      </form>
+    </div>
+
+    <script type="text/javascript">
+    // setTimeout(function() {
+    //   alert("Congratualtions!!! you are our 1millionth visitor!!! :)")
+    // }, 2000);
+
+    </script>
+  </body>
+</html>
