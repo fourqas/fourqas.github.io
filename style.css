@@ -1,0 +1,101 @@
+body {
+  /* padding: 20px 10px; */
+  border: 5px solid #ffbc00;
+  background-color: #fefefe;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: 'Graduate', cursive;
+  text-align: center;
+  text-shadow: -2px 2px 3px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.header {
+  background-color: #FFBC00;
+  padding: 15px;
+  margin-bottom: 2rem;
+}
+
+.header img {
+  width: 90%;
+  background-color: #ffbc00;
+  /* position: absolute; */
+}
+
+.header ul {
+  display: flex;
+}
+
+.header ul li {
+  flex-grow: 1;
+}
+
+.header a {
+  color: #000;
+  font-size: 1.75rem;
+  font-family: 'Graduate', cursive;
+  transition: border 200ms;
+}
+
+.header a:hover {
+  text-decoration: none;
+
+  border-bottom: 2px solid #000;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bios {
+  flex-wrap: wrap;
+
+  padding: 10px 10%;
+}
+
+.bios .bio {
+  position: relative;
+  box-sizing: border-box;
+  flex-basis: 33%;
+  padding: 25px;
+}
+
+.bios .bio h3 {
+  position: absolute;
+  z-index: 100;
+  top: 1rem;
+  right: 2rem;
+  transform: rotate(7.5deg);
+
+  font-size: 4rem;
+  color: #FFBC00;
+}
+
+.bios .bio img {
+  width: 100%;
+}
+
+.flexbox {
+  display: flex;
+}
