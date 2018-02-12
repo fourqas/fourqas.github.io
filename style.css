@@ -1,6 +1,8 @@
+/* General */
 body {
   /* padding: 20px 10px; */
-  border: 5px solid #ffbc00;
+  border: 7px solid #ffbc00;
+  border-bottom: 0;
   background-color: #fefefe;
   min-height: 100vh;
 }
@@ -19,6 +21,36 @@ h2 {
   font-size: 4rem;
   margin-bottom: 1rem;
 }
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #990000;
+
+  font-size: 1.125rem;
+}
+
+a:hover {
+  color: #990000;
+}
+
+hr {
+  border-top: 2px solid #990000;
+  /* border-color: #990000; */
+}
+
+.row.content {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.flexbox {
+  display: flex;
+}
+
+/* Header */
 
 .header {
   background-color: #FFBC00;
@@ -42,6 +74,7 @@ h2 {
 
 .header a {
   color: #000;
+  text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.35);
   font-size: 1.75rem;
   font-family: 'Graduate', cursive;
   transition: border 200ms;
@@ -51,6 +84,43 @@ h2 {
   text-decoration: none;
 
   border-bottom: 2px solid #000;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #FFBC00;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+
+  justify-content: space-between;
+
+  /* position: absolute;
+  bottom: 0;
+  width: 100%; */
+}
+
+.footer a {
+  font-size: 0.9rem;
+}
+
+/* Homepage */
+
+.blurb {
+  border: 5px solid #990000;
+  padding: 15px 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.blurb h2 {
+  /* position: absolute; */
+  text-align: left;
+  font-size: 2rem;
+}
+
+.blurb p:last-child {
+  margin-bottom: 0;
 }
 
 .video {
@@ -67,6 +137,31 @@ h2 {
   width: 100%;
   height: 100%;
 }
+
+/* Shows */
+
+.shows .show {
+  position: relative;
+}
+
+.shows img {
+  margin-bottom: 3rem;
+}
+
+.shows h3 {
+  position: absolute;
+  z-index: 100;
+  top: 2rem;
+  right: 1rem;
+  transform: rotate(5deg);
+
+  color: #FFBC00;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+/* Cast */
 
 .bios {
   flex-wrap: wrap;
@@ -96,6 +191,8 @@ h2 {
   width: 100%;
 }
 
-.flexbox {
-  display: flex;
+/* Contact */
+
+.blurb.contact, .blurb.contact h2 {
+  text-align: center;
 }
