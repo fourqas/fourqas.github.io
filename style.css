@@ -2,13 +2,16 @@
 body {
   /* padding: 20px 10px; */
   border: 7px solid #ffbc00;
-  border-bottom: 0;
+  /* border-bottom: 25px solid #FFBC00; */
+  border-bottom: 0px;
   background-color: #fefefe;
   min-height: 100vh;
+
+  position: relative;
 }
 
 h1, h2, h3 {
-  font-family: 'Graduate', cursive;
+  font-family: 'Graduate', sans-serif;
   text-align: center;
   text-shadow: -2px 2px 3px rgba(0, 0, 0, 0.35);
 }
@@ -39,6 +42,10 @@ a:hover {
 hr {
   border-top: 2px solid #990000;
   /* border-color: #990000; */
+}
+
+.container-fluid, .container {
+  padding-bottom: 2rem;
 }
 
 .row.content {
@@ -89,15 +96,20 @@ hr {
 /* Footer */
 
 .footer {
+  display: flex;
+
   background-color: #FFBC00;
   padding: 10px 15px;
   font-size: 0.9rem;
 
   justify-content: space-between;
 
-  /* position: absolute;
+  position: absolute;
   bottom: 0;
-  width: 100%; */
+  left: 0;
+  right: 0;
+  margin-left: -7px;
+  margin-right: -7px;
 }
 
 .footer a {
@@ -169,25 +181,22 @@ hr {
   padding: 10px 10%;
 }
 
-.bios .bio {
-  position: relative;
-  box-sizing: border-box;
-  flex-basis: 33%;
-  padding: 25px;
+.bio {
+  margin-bottom: 2rem;
 }
 
-.bios .bio h3 {
+.bio h3 {
   position: absolute;
   z-index: 100;
-  top: 1rem;
-  right: 2rem;
-  transform: rotate(7.5deg);
+  top: 0rem;
+  right: 1.5rem;
+  transform: rotate(5deg);
 
   font-size: 4rem;
   color: #FFBC00;
 }
 
-.bios .bio img {
+.bio img {
   width: 100%;
 }
 
